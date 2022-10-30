@@ -32,7 +32,6 @@ const getThemeObj = (theme: Theme) => {
 }
 
 const useStyles = makeStyles((theme: Theme) => (getThemeObj(theme)))
-
 const App: React.FC<Props> = (props) => {
     const {showLeftPart} = useActions()
     const {primaryColor, isLeftShowing} = useAppState()
